@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Garamond Premier Pro Display";
+  src: url("garamondpremierprodisplay-webfont.woff2") format("woff2"),
+    url("garamondpremierprodisplay-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
