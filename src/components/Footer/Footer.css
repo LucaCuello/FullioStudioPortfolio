@@ -25,6 +25,7 @@
 }
 
 .footer-social a {
+  display: grid;
   color: #000000;
   transition: all 200ms ease-in-out;
 }
