@@ -1,0 +1,38 @@
+.website-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 120px;
+}
+
+.website-logo {
+  font-family: "Adobe Garamond Pro Regular";
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 22px;
+  color: #b3301e;
+}
+
+.website-nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  font-family: "Garamond Premier Pro Display";
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #0000008f;
+}
+
+.website-nav ul li {
+  transition: all 300ms ease-in;
+}
+
+.website-nav ul li:hover {
+  color: #00000069;
+  transition: all 300ms ease-in;
+}
