@@ -1,0 +1,8 @@
+.homeimage-container {
+  background-image: url("/src/assets/HomeImage.png");
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  margin-top: 20px;
+}
