@@ -1,2 +1,10 @@
 @import url(./fonts/AdobeGaramondPro/AdobeGaramondPro.css);
 @import url(./fonts/GaramondPremierProDisplay/GaramondPremiereProDisplay.css);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
