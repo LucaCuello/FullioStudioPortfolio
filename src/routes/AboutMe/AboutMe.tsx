@@ -1,7 +1,7 @@
 import "./AboutMe.css";
 export const AboutMe = () => {
   return (
-    <div className="about-me-container">
+    <div className="about-me-container container">
       <h1 className="title">About</h1>
       <div className="about-me-picture"></div>
       <div className="about-me-text-container">
