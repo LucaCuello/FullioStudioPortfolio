@@ -2,6 +2,9 @@
   border: 1px solid #0202023d;
   width: 70ch;
   height: 600px;
+}
+
+.about-me-picture:nth-of-type(3) {
   margin-top: 20px;
 }
 

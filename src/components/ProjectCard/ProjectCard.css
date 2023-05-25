@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  gap: 10px;
+}
+
+.portrait-container {
+  border: 1px solid #0202023d;
+  width: 400px;
+  height: 500px;
+}
+
+.card-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Adobe Garamond Pro Regular";
+  color: #222;
+  font-weight: 800;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Adobe Garamond Pro Regular";
+  color: #222;
+  font-weight: 400;
+}

@@ -9,6 +9,22 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e6e1e1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd9f97;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db7b6f;
+}
+
 #root {
   display: flex;
   flex-direction: column;
@@ -29,7 +45,7 @@
   font-family: "Adobe Garamond Pro Regular";
   color: #222;
   font-weight: 400;
-  padding-top: 20px;
+  padding: 40px 0;
 }
 
 .text {

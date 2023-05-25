@@ -4,12 +4,12 @@ export const ProjectCard = () => {
   return (
     <div className="card-container">
       <div className="portrait-container">
-        <img src="https://i.imgur.com/JX3XK7G.png" alt="portrait" />
+        {/* <img src="#" alt="portrait" /> */}
       </div>
       <div className="card-body-container">
         <h2 className="card-title">Project Title</h2>
         <h3 className="card-subtitle">Project Subtitle</h3>
-        <p className="card-description">
+        <p className="card-description text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti a ullam
           dolorem, nisi voluptas architecto earum ut voluptatum. Autem exercitationem
           voluptatum nulla beatae odit molestias, reiciendis eligendi omnis
