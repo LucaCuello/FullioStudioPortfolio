@@ -1,0 +1,19 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-picture {
+  border: 1px solid #0202023d;
+  width: 70ch;
+  height: 600px;
+  margin-top: 20px;
+}
+
+.about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
