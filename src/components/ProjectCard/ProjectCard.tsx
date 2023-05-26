@@ -1,22 +1,30 @@
 import "./ProjectCard.css";
 
-export const ProjectCard = () => {
+type ProjectCardProps = {
+  title: string;
+  subtitle: string;
+  description: string;
+  portrait: string;
+  isRightSide: boolean;
+};
+
+export const ProjectCard = ({
+  title,
+  subtitle,
+  description,
+  portrait,
+  isRightSide,
+}: ProjectCardProps) => {
   return (
     <div className="card-container">
-      <div className="portrait-container">
-        {/* <img src="#" alt="portrait" /> */}
+      <div className="portrait-container" style={{ order: isRightSide ? 1 : -1 }}>
+        <img src={portrait} alt="Portrait" className="portrait" />
       </div>
       <div className="card-body-container">
-        <h2 className="card-title">Project Title</h2>
-        <h3 className="card-subtitle">Project Subtitle</h3>
-        <p className="card-description text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti a ullam
-          dolorem, nisi voluptas architecto earum ut voluptatum. Autem exercitationem
-          voluptatum nulla beatae odit molestias, reiciendis eligendi omnis
-          perferendis unde in dolor accusamus corporis sit blanditiis, quam numquam
-          quibusdam accusantium!
-        </p>
-        <button>Read more</button>
+        <h2 className="card-title">{title}</h2>
+        <h3 className="card-subtitle">{subtitle}</h3>
+        <p className="card-description text">{description}</p>
+        <button className="card-button">Read more</button>
       </div>
     </div>
   );

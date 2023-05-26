@@ -1,4 +1,5 @@
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
+import { projectsData } from "./Data";
 import "./Projects.css";
 
 export const Projects = () => {
@@ -6,9 +7,9 @@ export const Projects = () => {
     <div className="projects-container container">
       <h1 className="title">Projects</h1>
       <div className="projects-card-container">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projectsData.map((props, index) => (
+          <ProjectCard {...props} key={index} />
+        ))}
       </div>
     </div>
   );

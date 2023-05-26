@@ -18,11 +18,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dd9f97;
+  background: #f5c8c3;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #db7b6f;
+  background: #bb9b96;
 }
 
 #root {
@@ -49,7 +49,7 @@
 }
 
 .text {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 32px;
   font-weight: 400;
