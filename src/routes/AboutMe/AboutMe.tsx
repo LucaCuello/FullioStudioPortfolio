@@ -1,7 +1,14 @@
+import { motion } from "framer-motion";
 import "./AboutMe.css";
+
 export const AboutMe = () => {
   return (
-    <div className="about-me-container container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="about-me-container container"
+    >
       <h1 className="title">About</h1>
       <div className="about-me-picture"></div>
       <div className="about-me-text-container">
@@ -17,6 +24,6 @@ export const AboutMe = () => {
         </p>
       </div>
       <div className="about-me-picture"></div>
-    </div>
+    </motion.div>
   );
 };

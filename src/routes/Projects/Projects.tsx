@@ -1,16 +1,22 @@
+import { motion } from "framer-motion";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 import { projectsData } from "./Data";
 import "./Projects.css";
 
 export const Projects = () => {
   return (
-    <div className="projects-container container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="projects-container container"
+    >
       <h1 className="title">Projects</h1>
       <div className="projects-card-container">
         {projectsData.map((props, index) => (
           <ProjectCard {...props} key={index} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
