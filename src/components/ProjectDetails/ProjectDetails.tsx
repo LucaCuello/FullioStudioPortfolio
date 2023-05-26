@@ -1,5 +1,7 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
+import { ProjectCard } from "../ProjectCard/ProjectCard";
+import "./ProjectDetails.css";
 
 export const ProjectDetails = () => {
   const getDetails = (id: string) => {
@@ -11,9 +13,12 @@ export const ProjectDetails = () => {
   const project = getDetails(id!);
 
   return (
-    <>
-      <h1>{project?.title}</h1>
-      <h2>{project?.subtitle}</h2>
-    </>
+    <div className="project-details-container container">
+      <Link to="/projects" className="go-back text">
+        go back
+      </Link>
+      <h2 className="title">{project!.title}</h2>
+      <ProjectCard {...project!} isReadMoreVisible={false} />
+    </div>
   );
 };

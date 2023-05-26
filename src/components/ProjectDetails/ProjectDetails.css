@@ -1,0 +1,20 @@
+.project-details-container {
+  position: relative;
+}
+
+.go-back {
+  position: absolute;
+  top: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  align-self: flex-start;
+  color: #00000069;
+  transition: all 200ms ease-in-out;
+  width: max-content;
+}
+
+.go-back:hover {
+  color: #000000ad;
+  transition: all 200ms ease-in-out;
+}
