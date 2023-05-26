@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./ProjectCard.css";
 
 type ProjectCardProps = {
+  id: string;
   title: string;
   subtitle: string;
   description: string;
@@ -10,6 +12,7 @@ type ProjectCardProps = {
 };
 
 export const ProjectCard = ({
+  id,
   title,
   subtitle,
   description,
@@ -31,7 +34,9 @@ export const ProjectCard = ({
         <h2 className="card-title">{title}</h2>
         <h3 className="card-subtitle">{subtitle}</h3>
         <p className="card-description text">{description}</p>
-        <button className="card-button">Read more</button>
+        <Link to={id} className="card-button">
+          Read more
+        </Link>
       </div>
     </motion.div>
   );

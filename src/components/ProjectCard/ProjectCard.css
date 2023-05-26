@@ -51,6 +51,8 @@
   border-radius: 0%;
   border: 1px solid #878282;
   background-color: #ffffff;
+  text-decoration: none;
+  color: black;
   font-family: "Adobe Garamond Pro Regular";
   text-transform: uppercase;
   font-size: 12px;

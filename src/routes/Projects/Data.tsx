@@ -10,6 +10,7 @@ import moodIndigo from "../../assets/Previews/moodindigo.jpg";
 
 export const projectsData = [
   {
+    id: "moodindigo",
     title: "Mood Indigo",
     subtitle: "Upccycled Levi's Jeans",
     description:
@@ -18,6 +19,7 @@ export const projectsData = [
     isRightSide: false,
   },
   {
+    id: "fetestore",
     title: "Fête Store",
     subtitle: "My jewelry and accessories brand",
     description:
@@ -26,6 +28,7 @@ export const projectsData = [
     isRightSide: true,
   },
   {
+    id: "editorials",
     title: "Editorials",
     subtitle: "Fête Store Editorials",
     description:
@@ -34,6 +37,7 @@ export const projectsData = [
     isRightSide: false,
   },
   {
+    id: "catalinadearagon",
     title: "Catalina de Aragón",
     subtitle: "The argentinian brand where I work as a designer",
     description:
@@ -42,6 +46,7 @@ export const projectsData = [
     isRightSide: true,
   },
   {
+    id: "graduationcollection",
     title: "Graduation Collection",
     subtitle: "Vicha: Modern Couture Brand",
     description:
@@ -50,6 +55,7 @@ export const projectsData = [
     isRightSide: false,
   },
   {
+    id: "artfashion",
     title: "Art + Fashion",
     subtitle: "Designs based on artist Marcela Sinclair's Work",
     description:
@@ -58,6 +64,7 @@ export const projectsData = [
     isRightSide: true,
   },
   {
+    id: "calvinklein",
     title: "Calvin Klein 205W39NYC",
     subtitle: "Designs based on Raf Simons' Calvin Klein",
     description:
@@ -66,6 +73,7 @@ export const projectsData = [
     isRightSide: false,
   },
   {
+    id: "leatherbagbrand",
     title: "My Leather Bag Brand",
     subtitle: "Genuine Leather Bags",
     description:
@@ -74,6 +82,7 @@ export const projectsData = [
     isRightSide: true,
   },
   {
+    id: "experimentalleatherbags",
     title: "Experimental Leather Bags",
     subtitle: "Leather bags",
     description:
