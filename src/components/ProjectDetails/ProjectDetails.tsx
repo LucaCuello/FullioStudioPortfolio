@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
@@ -35,7 +36,12 @@ export const ProjectDetails = () => {
   };
 
   return (
-    <div className="project-details-container container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2 }}
+      className="project-details-container container"
+    >
       <Link to="/projects" className="go-back text">
         <IoIosArrowRoundBack />
         go back
@@ -47,6 +53,6 @@ export const ProjectDetails = () => {
         portrait={project!.secondaryPortrait}
       />
       <div className="images-container">{renderSwitch(project!.id)}</div>
-    </div>
+    </motion.div>
   );
 };

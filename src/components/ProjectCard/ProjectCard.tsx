@@ -25,8 +25,8 @@ export const ProjectCard = ({
     <motion.div
       initial={{ opacity: 0, x: isRightSide ? 100 : -100 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true, margin: "-200px 0px" }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true, margin: "-100px 0px" }}
       className="card-container"
       style={{ gap: isRightSide ? "0px" : "20px" }}
     >
