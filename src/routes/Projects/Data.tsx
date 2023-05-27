@@ -8,6 +8,15 @@ import graduation from "../../assets/Previews/graduation.jpg";
 import leatherBag from "../../assets/Previews/leatherbag.jpg";
 import moodIndigo from "../../assets/Previews/moodindigo.jpg";
 
+// Change portraits on read more click
+import artFashionSecondary from "../../assets/Previews/artfashionSecondary.jpg";
+import calvinKleinSecondary from "../../assets/Previews/calvinkleinSecondary.jpg";
+import catalinaSecondary from "../../assets/Previews/catalinaSecondary.jpg";
+import editorialsSecondary from "../../assets/Previews/editorialsSecondary.jpg";
+import experimentalLeatherBagSecondary from "../../assets/Previews/experimentalleatherbagSecondary.jpg";
+import graduationSecondary from "../../assets/Previews/graduationSecondary.jpg";
+import leatherBagSecondary from "../../assets/Previews/leatherbagSecondary.jpg";
+
 export const projectsData = [
   {
     id: "moodindigo",
@@ -18,6 +27,7 @@ export const projectsData = [
     portrait: moodIndigo,
     isRightSide: false,
     isDetailed: true,
+    secondaryPortrait: moodIndigo,
   },
   {
     id: "fetestore",
@@ -28,6 +38,7 @@ export const projectsData = [
     portrait: feteStore,
     isRightSide: true,
     isDetailed: true,
+    secondaryPortrait: feteStore,
   },
   {
     id: "editorials",
@@ -38,6 +49,7 @@ export const projectsData = [
     portrait: editorials,
     isRightSide: false,
     isDetailed: true,
+    secondaryPortrait: editorialsSecondary,
   },
   {
     id: "catalinadearagon",
@@ -48,6 +60,7 @@ export const projectsData = [
     portrait: catalina,
     isRightSide: true,
     isDetailed: true,
+    secondaryPortrait: catalinaSecondary,
   },
   {
     id: "graduationcollection",
@@ -58,6 +71,7 @@ export const projectsData = [
     portrait: graduation,
     isRightSide: false,
     isDetailed: true,
+    secondaryPortrait: graduationSecondary,
   },
   {
     id: "artfashion",
@@ -68,6 +82,7 @@ export const projectsData = [
     portrait: artFashion,
     isRightSide: true,
     isDetailed: true,
+    secondaryPortrait: artFashionSecondary,
   },
   {
     id: "calvinklein",
@@ -78,6 +93,7 @@ export const projectsData = [
     portrait: calvinKlein,
     isRightSide: false,
     isDetailed: true,
+    secondaryPortrait: calvinKleinSecondary,
   },
   {
     id: "leatherbagbrand",
@@ -88,6 +104,7 @@ export const projectsData = [
     portrait: leatherBag,
     isRightSide: true,
     isDetailed: true,
+    secondaryPortrait: leatherBagSecondary,
   },
   {
     id: "experimentalleatherbags",
@@ -98,5 +115,6 @@ export const projectsData = [
     portrait: experimentalLeatherBag,
     isRightSide: false,
     isDetailed: true,
+    secondaryPortrait: experimentalLeatherBagSecondary,
   },
 ];
