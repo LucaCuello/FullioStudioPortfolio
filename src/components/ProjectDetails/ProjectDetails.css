@@ -26,14 +26,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px;
   justify-content: flex-start;
   align-items: center;
   width: 910px;
-  /* border: 1px solid red; */
 }
 
-.image-container-normal {
-  /* border: 1px solid green; */
+.image-container-normal,
+.video-container-normal {
   width: 400px;
   height: 550px;
 }
@@ -43,7 +43,21 @@
   height: 520px;
 }
 
-.image {
+.image,
+.video {
   height: 100%;
   width: 100%;
+  object-fit: cover;
+}
+
+.image {
+  object-position: top;
+  filter: contrast(0.7);
+  transition: all 150ms ease-in-out;
+}
+
+.image:hover {
+  filter: contrast(0.8);
+  transform: scale(1.01);
+  transition: all 150ms ease-in-out;
 }

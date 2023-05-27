@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./ProjectDetails.css";
+import { FeteStore } from "./Projects/FeteStore/FeteStore";
+import { MoodIndigo } from "./Projects/MoodIndigo/MoodIndigo";
 
 export const ProjectDetails = () => {
   const getDetails = (id: string) => {
@@ -16,13 +18,10 @@ export const ProjectDetails = () => {
   const renderSwitch = (id: string) => {
     switch (id) {
       case "moodindigo":
-        return (
-          <p className="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo
-            aspernatur soluta non odit temporibus? Explicabo sit blanditiis error
-            nisi!
-          </p>
-        );
+        return <MoodIndigo />;
+      case "fetestore":
+        return <FeteStore />;
+
       // default:
       //   <p className="text">Default</p>;
       //   break;
@@ -37,50 +36,7 @@ export const ProjectDetails = () => {
       </Link>
       <h2 className="title">{project!.title}</h2>
       <ProjectCard {...project!} isDetailed={false} />
-      {/* {renderSwitch(project!.id)} */}
-
-      <div className="images-container">
-        <div className="image-container-normal">
-          <img
-            src="/src/assets/Previews/catalina.jpg"
-            className="image"
-            alt="image"
-            draggable={false}
-          />
-        </div>
-        <div className="image-container-normal">
-          <img
-            src="/src/assets/Previews/catalina.jpg"
-            className="image"
-            alt="image"
-            draggable={false}
-          />
-        </div>
-        <div className="image-container-normal">
-          <img
-            src="/src/assets/Previews/catalina.jpg"
-            className="image"
-            alt="image"
-            draggable={false}
-          />
-        </div>
-        <div className="image-container-normal">
-          <img
-            src="/src/assets/Previews/catalina.jpg"
-            className="image"
-            alt="image"
-            draggable={false}
-          />
-        </div>
-        <div className="image-container-large">
-          <img
-            src="/src/assets/Previews/catalina.jpg"
-            className="image"
-            alt="image"
-            draggable={false}
-          />
-        </div>
-      </div>
+      <div className="images-container">{renderSwitch(project!.id)}</div>
     </div>
   );
 };
