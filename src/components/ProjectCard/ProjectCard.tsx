@@ -28,6 +28,7 @@ export const ProjectCard = ({
       transition={{ duration: 0.5 }}
       viewport={{ once: true, margin: "-200px 0px" }}
       className="card-container"
+      style={{ gap: isRightSide ? "0px" : "20px" }}
     >
       <div className="portrait-container" style={{ order: isRightSide ? 1 : -1 }}>
         <img src={portrait} alt="Portrait" className="portrait" />
@@ -35,10 +36,21 @@ export const ProjectCard = ({
       <div className="card-body-container">
         {isDetailed ? <h2 className="card-title">{title}</h2> : null}
         <h3 className="card-subtitle">{subtitle}</h3>
-        <p className="card-description text">{description}</p>
+        <p
+          className="card-description text"
+          style={{ paddingRight: isRightSide ? "5px" : "0px" }}
+        >
+          {description}
+        </p>
 
         {isDetailed ? (
-          <Link to={id} className="card-button">
+          <Link
+            to={id}
+            className="card-button"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
             Read more
           </Link>
         ) : null}
