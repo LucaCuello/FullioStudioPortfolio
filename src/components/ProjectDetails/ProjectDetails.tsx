@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./ProjectDetails.css";
+import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
 import { MoodIndigo } from "./Projects/MoodIndigo/MoodIndigo";
 
@@ -21,6 +22,8 @@ export const ProjectDetails = () => {
         return <MoodIndigo />;
       case "fetestore":
         return <FeteStore />;
+      case "editorials":
+        return <Editorials />;
 
       // default:
       //   <p className="text">Default</p>;
@@ -35,7 +38,11 @@ export const ProjectDetails = () => {
         go back
       </Link>
       <h2 className="title">{project!.title}</h2>
-      <ProjectCard {...project!} isDetailed={false} />
+      <ProjectCard
+        {...project!}
+        isDetailed={false}
+        portrait={project!.secondaryPortrait}
+      />
       <div className="images-container">{renderSwitch(project!.id)}</div>
     </div>
   );
