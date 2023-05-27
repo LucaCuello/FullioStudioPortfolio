@@ -9,7 +9,7 @@ type ProjectCardProps = {
   description: string;
   portrait: string;
   isRightSide: boolean;
-  isReadMoreVisible: boolean;
+  isDetailed: boolean;
 };
 
 export const ProjectCard = ({
@@ -19,7 +19,7 @@ export const ProjectCard = ({
   description,
   portrait,
   isRightSide,
-  isReadMoreVisible,
+  isDetailed,
 }: ProjectCardProps) => {
   return (
     <motion.div
@@ -33,11 +33,11 @@ export const ProjectCard = ({
         <img src={portrait} alt="Portrait" className="portrait" />
       </div>
       <div className="card-body-container">
-        <h2 className="card-title">{title}</h2>
+        {isDetailed ? <h2 className="card-title">{title}</h2> : null}
         <h3 className="card-subtitle">{subtitle}</h3>
         <p className="card-description text">{description}</p>
 
-        {isReadMoreVisible ? (
+        {isDetailed ? (
           <Link to={id} className="card-button">
             Read more
           </Link>

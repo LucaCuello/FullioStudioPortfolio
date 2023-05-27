@@ -3,6 +3,9 @@
 }
 
 .go-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   position: absolute;
   top: 40px;
   text-transform: uppercase;
@@ -11,10 +14,36 @@
   align-self: flex-start;
   color: #00000069;
   transition: all 200ms ease-in-out;
-  width: max-content;
+  width: max-content !important;
 }
 
 .go-back:hover {
   color: #000000ad;
   transition: all 200ms ease-in-out;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 910px;
+  /* border: 1px solid red; */
+}
+
+.image-container-normal {
+  /* border: 1px solid green; */
+  width: 400px;
+  height: 550px;
+}
+
+.image-container-large {
+  width: 820px;
+  height: 520px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
 }
