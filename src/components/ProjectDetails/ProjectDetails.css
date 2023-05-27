@@ -35,12 +35,17 @@
 .image-container-normal,
 .video-container-normal {
   width: 400px;
-  height: 550px;
+  height: 650px;
 }
 
 .image-container-large {
   width: 820px;
   height: 520px;
+}
+
+.image-container-reel {
+  width: 270px;
+  height: 270px;
 }
 
 .image,
@@ -60,4 +65,9 @@
   filter: contrast(0.8);
   transform: scale(1.01);
   transition: all 150ms ease-in-out;
+}
+
+.catalina-title {
+  flex: 1 1 700px !important;
+  text-align: center !important;
 }

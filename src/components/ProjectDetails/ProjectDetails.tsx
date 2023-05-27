@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./ProjectDetails.css";
+import { Catalina } from "./Projects/Catalina/Catalina";
 import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
 import { MoodIndigo } from "./Projects/MoodIndigo/MoodIndigo";
@@ -24,6 +25,8 @@ export const ProjectDetails = () => {
         return <FeteStore />;
       case "editorials":
         return <Editorials />;
+      case "catalinadearagon":
+        return <Catalina />;
 
       // default:
       //   <p className="text">Default</p>;

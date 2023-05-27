@@ -35,10 +35,15 @@ export const ProjectCard = ({
       </div>
       <div className="card-body-container">
         {isDetailed ? <h2 className="card-title">{title}</h2> : null}
-        <h3 className="card-subtitle">{subtitle}</h3>
+        <h3
+          className="card-subtitle"
+          style={{ paddingRight: isRightSide ? "20px" : "0px" }}
+        >
+          {subtitle}
+        </h3>
         <p
           className="card-description text"
-          style={{ paddingRight: isRightSide ? "5px" : "0px" }}
+          style={{ paddingRight: isRightSide ? "20px" : "0px" }}
         >
           {description}
         </p>
