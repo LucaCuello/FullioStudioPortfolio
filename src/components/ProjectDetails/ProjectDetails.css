@@ -38,7 +38,8 @@
   height: 650px;
 }
 
-.image-container-large {
+.image-container-large,
+.video-container-large {
   width: 820px;
   height: 520px;
 }

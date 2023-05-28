@@ -7,6 +7,7 @@ import "./ProjectDetails.css";
 import { Catalina } from "./Projects/Catalina/Catalina";
 import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
+import { Graduation } from "./Projects/Graduation/Graduation";
 import { MoodIndigo } from "./Projects/MoodIndigo/MoodIndigo";
 
 export const ProjectDetails = () => {
@@ -28,6 +29,8 @@ export const ProjectDetails = () => {
         return <Editorials />;
       case "catalinadearagon":
         return <Catalina />;
+      case "graduationcollection":
+        return <Graduation />;
 
       // default:
       //   <p className="text">Default</p>;
