@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { projectsData } from "../../routes/Projects/Data";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./ProjectDetails.css";
+import { ArtFashion } from "./Projects/ArtFashion/ArtFashion";
 import { Catalina } from "./Projects/Catalina/Catalina";
 import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
@@ -31,6 +32,8 @@ export const ProjectDetails = () => {
         return <Catalina />;
       case "graduationcollection":
         return <Graduation />;
+      case "artfashion":
+        return <ArtFashion />;
 
       // default:
       //   <p className="text">Default</p>;
