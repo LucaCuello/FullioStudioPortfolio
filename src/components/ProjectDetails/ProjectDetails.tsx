@@ -10,6 +10,7 @@ import { Catalina } from "./Projects/Catalina/Catalina";
 import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
 import { Graduation } from "./Projects/Graduation/Graduation";
+import { LeatherBag } from "./Projects/LeatherBag/LeatherBag";
 import { MoodIndigo } from "./Projects/MoodIndigo/MoodIndigo";
 
 export const ProjectDetails = () => {
@@ -37,6 +38,8 @@ export const ProjectDetails = () => {
         return <ArtFashion />;
       case "calvinklein":
         return <CalvinKlein />;
+      case "leatherbagbrand":
+        return <LeatherBag />;
 
       // default:
       //   <p className="text">Default</p>;
