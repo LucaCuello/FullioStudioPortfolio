@@ -5,6 +5,7 @@ import { projectsData } from "../../routes/Projects/Data";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./ProjectDetails.css";
 import { ArtFashion } from "./Projects/ArtFashion/ArtFashion";
+import { CalvinKlein } from "./Projects/CalvinKlein/CalvinKlein";
 import { Catalina } from "./Projects/Catalina/Catalina";
 import { Editorials } from "./Projects/Editorials/Editorials";
 import { FeteStore } from "./Projects/FeteStore/FeteStore";
@@ -34,6 +35,8 @@ export const ProjectDetails = () => {
         return <Graduation />;
       case "artfashion":
         return <ArtFashion />;
+      case "calvinklein":
+        return <CalvinKlein />;
 
       // default:
       //   <p className="text">Default</p>;
