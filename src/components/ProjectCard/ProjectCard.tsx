@@ -41,19 +41,12 @@ export const ProjectCard = ({
       </div>
       <div className="card-body-container">
         {isDetailed ? <h2 className="card-title">{title}</h2> : null}
-        <h3
-          className="card-subtitle"
-          style={{ paddingRight: isRightSide ? "20px" : "0px" }}
-        >
+        <h3 className="card-subtitle" style={{ paddingRight: isRightSide ? "20px" : "0px" }}>
           {subtitle}
         </h3>
         <div className="text-container">
           {description.map((paragraph, index) => (
-            <p
-              key={index}
-              className="card-description text"
-              style={{ paddingRight: isRightSide ? "20px" : "0px" }}
-            >
+            <p key={index} className="card-description text" style={{ paddingRight: isRightSide ? "20px" : "0px" }}>
               {paragraph}
             </p>
           ))}
