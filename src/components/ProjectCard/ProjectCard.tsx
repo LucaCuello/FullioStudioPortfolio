@@ -30,7 +30,13 @@ export const ProjectCard = ({
       className="card-container"
       style={{ gap: isRightSide ? "0px" : "20px" }}
     >
-      <div className="portrait-container" style={{ order: isRightSide ? 1 : -1 }}>
+      <div
+        className="portrait-container"
+        style={{
+          order: isRightSide ? 1 : -1,
+          height: description.length >= 2 ? "710px" : "500px",
+        }}
+      >
         <img src={portrait} alt="Portrait" className="portrait" />
       </div>
       <div className="card-body-container">
