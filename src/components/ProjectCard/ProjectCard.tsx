@@ -6,7 +6,7 @@ type ProjectCardProps = {
   id: string;
   title: string;
   subtitle: string;
-  description: string;
+  description: Array<string>;
   portrait: string;
   isRightSide: boolean;
   isDetailed: boolean;
@@ -41,13 +41,17 @@ export const ProjectCard = ({
         >
           {subtitle}
         </h3>
-        <p
-          className="card-description text"
-          style={{ paddingRight: isRightSide ? "20px" : "0px" }}
-        >
-          {description}
-        </p>
-
+        <div className="text-container">
+          {description.map((paragraph, index) => (
+            <p
+              key={index}
+              className="card-description text"
+              style={{ paddingRight: isRightSide ? "20px" : "0px" }}
+            >
+              {paragraph}
+            </p>
+          ))}
+        </div>
         {isDetailed ? (
           <Link
             to={id}

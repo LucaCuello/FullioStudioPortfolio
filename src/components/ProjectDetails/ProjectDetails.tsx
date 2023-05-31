@@ -62,6 +62,7 @@ export const ProjectDetails = () => {
         {...project!}
         isDetailed={false}
         portrait={project!.secondaryPortrait}
+        description={project!.secondaryDescription}
       />
       <div className="images-container">{renderSwitch(project!.id)}</div>
     </motion.div>
