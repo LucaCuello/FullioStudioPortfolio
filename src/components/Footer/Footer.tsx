@@ -1,4 +1,4 @@
-import { CiFacebook, CiInstagram } from "react-icons/ci";
+import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -14,6 +14,9 @@ export const Footer = () => {
         </a>
         <a href="https://www.instagram.com/paufullio/" target="_blank">
           <CiInstagram />
+        </a>
+        <a href="https://www.linkedin.com/in/paula-fullio/" target="_blank">
+          <CiLinkedin />
         </a>
       </div>
     </footer>
