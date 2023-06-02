@@ -63,16 +63,22 @@
 
 .btn {
   cursor: pointer;
-  color: #000000;
-  background-color: #fafafa;
+  color: #000000ad;
+  background-color: white;
   border: 1px solid #a9a9a9;
   font-family: "Adobe Garamond Pro Regular";
-  font-size: 10px;
-  letter-spacing: 1px;
-  padding: 15px 0px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 10px 0px;
   text-transform: uppercase;
   text-decoration: none;
   transition: all 150ms ease-in-out;
   width: 120px;
   align-self: center;
+}
+
+.btn:hover {
+  background-color: #7e7777;
+  color: white;
+  transition: all 150ms ease-in-out;
 }

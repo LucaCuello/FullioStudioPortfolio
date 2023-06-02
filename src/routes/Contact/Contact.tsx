@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import "./Contact.css";
 
 export const Contact = () => {
   return (
-    <div className="contact-container container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="contact-container container"
+    >
       <h2 className="title">Contact</h2>
       <div className="contact-form">
         <div className="contact-body">
@@ -23,6 +29,6 @@ export const Contact = () => {
         </div>
         <ContactForm />
       </div>
-    </div>
+    </motion.div>
   );
 };
