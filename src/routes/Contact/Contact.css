@@ -1,0 +1,13 @@
+.contact-form {
+  display: flex;
+}
+
+.contact-title {
+  font-size: 25px;
+  padding: 0px 0px 5px 0px !important;
+  color: #000000b4;
+}
+
+.contact-social {
+  padding-top: 5px;
+}

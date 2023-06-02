@@ -11,7 +11,7 @@ export const Projects = () => {
       transition={{ duration: 0.8 }}
       className="projects-container container"
     >
-      <h1 className="title">Projects</h1>
+      <h2 className="title">Projects</h2>
       <div className="projects-card-container">
         {projectsData.map((props, index) => (
           <ProjectCard {...props} key={index} />

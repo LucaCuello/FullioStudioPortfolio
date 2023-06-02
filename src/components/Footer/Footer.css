@@ -20,22 +20,22 @@
   color: #000000d5;
 }
 
-.footer-social {
+.social-links {
   display: flex;
   gap: 10px;
 }
 
-.footer-social a {
+.social-links a {
   display: grid;
   color: #000000;
   transition: all 200ms ease-in-out;
 }
 
-.footer-social a:hover {
+.social-links a:hover {
   color: #b3301e;
   transition: all 200ms ease-in-out;
 }
 
-.footer-social a svg {
+.social-links a svg {
   font-size: 24px;
 }

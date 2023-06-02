@@ -8,7 +8,7 @@ export const Footer = () => {
         <span>Fullio Studio 2023</span>
         <span>All rights reserved</span>
       </div>
-      <div className="footer-social">
+      <div className="social-links">
         <a href="https://www.facebook.com/paula.fullio" target="_blank">
           <CiFacebook />
         </a>
