@@ -1,5 +1,6 @@
 .contact-form {
   display: flex;
+  gap: 40px;
 }
 
 .contact-title {
@@ -10,4 +11,15 @@
 
 .contact-social {
   padding-top: 5px;
+}
+
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.contact-body .text {
+  text-align: center;
 }

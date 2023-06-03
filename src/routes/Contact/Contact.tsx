@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CiFacebook, CiLinkedin } from "react-icons/ci";
+import { CiInstagram, CiLinkedin } from "react-icons/ci";
 import { ContactForm } from "../../components/ContactForm/ContactForm";
 import "./Contact.css";
 
@@ -19,11 +19,11 @@ export const Contact = () => {
           <p className="text">fulliostudio@gmail.com</p>
           <p className="text">My socials:</p>
           <div className="contact-social social-links">
-            <a href="https://www.facebook.com/paula.fullio" target="_blank">
-              <CiFacebook />
-            </a>
             <a href="https://www.linkedin.com/in/paula-fullio/" target="_blank">
               <CiLinkedin />
+            </a>
+            <a href="https://www.instagram.com/paufullio/" target="_blank">
+              <CiInstagram />
             </a>
           </div>
         </div>
