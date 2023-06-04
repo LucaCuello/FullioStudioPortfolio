@@ -1,0 +1,54 @@
+@media screen and (max-width: 500px) {
+  /* Home responsive */
+
+  #root {
+    position: relative;
+  }
+
+  .hamburguer-menu {
+    display: flex;
+  }
+  .website-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  .website-nav {
+    display: none;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .homeimage-container {
+    height: calc(100vh - 80px);
+    margin-top: 20px;
+  }
+
+  .website-footer {
+    padding: 20px 0;
+  }
+
+  .website-nav-active {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    top: 80px;
+    width: 100%;
+    padding: 60px 0;
+    height: 100vh;
+    z-index: 50;
+    border: 1px solid red;
+  }
+
+  .website-nav-active ul {
+    flex-direction: column;
+  }
+}
