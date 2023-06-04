@@ -49,17 +49,17 @@
     padding: 60px 0;
     height: 100vh;
     z-index: 50;
-    border: 1px solid red;
   }
 
   .website-nav-active ul {
     flex-direction: column;
   }
 
-  /* About responsive */
+  /* About me responsive */
+
   .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0px 15px;
   }
 
   .about-me-text-container {
@@ -70,12 +70,87 @@
     width: 100%;
   }
 
-  .text {
-    width: unset;
-    word-wrap: break-word;
+  .about-me-picture {
+    width: 100%;
   }
 
-  .about-me-picture {
+  /* Projects responsive */
+
+  .projects-card-container {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .card-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .portrait-container {
+    height: 400px !important;
+    width: 100%;
+  }
+
+  .card-description,
+  .text-container,
+  .card-body-container {
+    width: 100%;
+  }
+
+  .card-subtitle {
+    width: 100%;
+  }
+
+  .text-container p {
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  /* Project details responsive */
+
+  .images-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image-container-normal,
+  .video-container-normal {
+    height: 400px;
+  }
+
+  .image-container-large,
+  .video-container-large {
+    height: 200px;
+  }
+
+  .image-container-reel {
+    width: 150px;
+    height: 150px;
+  }
+
+  .go-back {
+    top: 15px;
+  }
+
+  /* Contact responsive */
+
+  .contact-form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contact-body {
+    width: 100%;
+  }
+
+  .contact-body p {
+    width: 100%;
+  }
+
+  .form-container {
     width: 100%;
   }
 }

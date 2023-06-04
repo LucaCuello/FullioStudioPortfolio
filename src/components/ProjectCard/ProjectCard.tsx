@@ -21,19 +21,31 @@ export const ProjectCard = ({
   isRightSide,
   isDetailed,
 }: ProjectCardProps) => {
+  const desktopWidth = document.body.offsetWidth;
+
+  const desktopVariant = {
+    initial: { opacity: 0, x: isRightSide ? 100 : -100 },
+    scroll: { opacity: 1, x: 0, transition: { duration: 0.6 } },
+  };
+
+  const responsiveVariant = {
+    initial: { opacity: 0, x: isRightSide ? 15 : -15 },
+    scroll: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  };
+
   return (
     <motion.div
-      initial={{ opacity: 0, x: isRightSide ? 100 : -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.6 }}
+      initial="initial"
+      whileInView="scroll"
       viewport={{ once: true, margin: "-100px 0px" }}
+      variants={desktopWidth <= 1060 ? responsiveVariant : desktopVariant}
       className="card-container"
-      style={{ gap: isRightSide ? "0px" : "20px" }}
+      style={{ gap: desktopWidth <= 1060 ? "20px" : isRightSide ? "0px" : "20px" }}
     >
       <div
         className="portrait-container"
         style={{
-          order: isRightSide ? 1 : -1,
+          order: desktopWidth <= 1060 ? -1 : isRightSide ? 1 : -1,
           height: description.length >= 2 ? "710px" : "500px",
         }}
       >
