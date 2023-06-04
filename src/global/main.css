@@ -1,5 +1,6 @@
 @import url(../fonts/AdobeGaramondPro/AdobeGaramondPro.css);
 @import url(../fonts/GaramondPremierProDisplay/GaramondPremiereProDisplay.css);
+@import url(./responsive.css);
 
 *,
 *::before,
@@ -25,12 +26,22 @@
   background: #bb9b96;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 #root {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
+  min-width: 280px;
+  width: 1000px;
+  max-width: 1000px;
+  overflow: hidden;
+  border: 1px solid red;
 }
 
 .container {
