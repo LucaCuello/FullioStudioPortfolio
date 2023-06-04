@@ -56,7 +56,7 @@ export const Graduation = () => {
         <img src={image13} className="image" alt="image" draggable={false} />
       </div>
       <div className="video-container-large">
-        <video autoPlay muted loop controls className="video">
+        <video autoPlay muted loop controls className="video" playsInline={true}>
           <source src={video14} type="video/mp4" />
         </video>
       </div>

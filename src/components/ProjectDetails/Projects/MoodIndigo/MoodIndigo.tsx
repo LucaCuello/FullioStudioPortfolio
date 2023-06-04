@@ -29,12 +29,12 @@ export const MoodIndigo = () => {
         <img src={image6} className="image" alt="image" draggable={false} />
       </div>
       <div className="video-container-normal">
-        <video autoPlay muted loop className="video">
+        <video autoPlay muted loop className="video" playsInline={true}>
           <source src={video7} type="video/mp4" />
         </video>
       </div>
       <div className="video-container-normal">
-        <video autoPlay muted loop className="video">
+        <video autoPlay muted loop className="video" playsInline={true}>
           <source src={video8} type="video/mp4" />
         </video>
       </div>
