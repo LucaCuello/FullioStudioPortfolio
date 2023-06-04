@@ -27,7 +27,7 @@
 .card-title {
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   font-family: "Adobe Garamond Pro Regular";
   color: #222;
   font-weight: 800;
@@ -36,7 +36,7 @@
 .card-subtitle {
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: "Adobe Garamond Pro Regular";
   color: #222;
   font-weight: 400;

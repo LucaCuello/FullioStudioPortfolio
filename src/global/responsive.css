@@ -46,8 +46,7 @@
     background-color: white;
     top: 80px;
     width: 100%;
-    padding: 60px 0;
-    height: 100vh;
+    height: calc(100vh - 80px);
     z-index: 50;
   }
 
@@ -87,7 +86,7 @@
   }
 
   .portrait-container {
-    height: 400px !important;
+    height: calc(100vh - 203px - 20px) !important;
     width: 100%;
   }
 

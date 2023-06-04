@@ -11,7 +11,7 @@
 .website-logo {
   font-family: "Adobe Garamond Pro Regular";
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   font-size: 20px;
   color: #b3301e;
 }
@@ -27,7 +27,7 @@
 .item-link {
   font-family: "Garamond Premier Pro Display";
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -68,7 +68,6 @@
 }
 
 .hamburguer-menu-active div:nth-child(2) {
-  /* display: none; */
   opacity: 0;
 }
 
