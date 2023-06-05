@@ -67,7 +67,7 @@ export const projectsData = [
   {
     id: "catalinadearagon",
     title: "Catalina de Aragón",
-    subtitle: "The argentinian brand where I work as a designer",
+    subtitle: "The argentinian brand where I worked as a designer",
     description: [
       "Catalina de Aragón is the argentinian brand that deeply influenced and shaped me as a designer. My role as a designer not only consisted in designing and developing collections but I also had an active role in the brand image and communication strategies.",
     ],

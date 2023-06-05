@@ -46,7 +46,7 @@ export const ProjectCard = ({
         className="portrait-container"
         style={{
           order: desktopWidth <= 1060 ? -1 : isRightSide ? 1 : -1,
-          height: description.length >= 2 ? "710px" : "500px",
+          height: description.length >= 2 ? "570px" : "500px",
         }}
       >
         <img src={portrait} alt="Portrait" className="portrait" />
