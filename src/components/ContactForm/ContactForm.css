@@ -12,7 +12,6 @@
 }
 
 .contact-label {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -44,9 +43,10 @@
   height: 80px;
 }
 
-.contact-type {
-  position: absolute;
-  opacity: 0.7;
-  left: 0;
-  top: 0;
+.error-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(209, 110, 110) !important;
+  text-align: center !important;
 }
