@@ -30,7 +30,7 @@ export const Header = () => {
       <nav className={active ? "website-nav website-nav-active" : "website-nav"}>
         <ul>
           <li>
-            <NavLink to="/home" className="item-link" onClick={() => setActive(false)}>
+            <NavLink to="/" className="item-link" onClick={() => setActive(false)}>
               Home
             </NavLink>
           </li>
