@@ -64,6 +64,7 @@
 
   .about-me-text-container {
     width: 100%;
+    gap: 10px;
   }
 
   .about-me-text-container p {
@@ -164,7 +165,40 @@
   }
 }
 
+@media screen and (max-width: 763px) {
+  .about-me-container {
+    width: 450px !important;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-me-picture {
+    width: 450px;
+    height: 620px;
+  }
+
+  .about-me-text-container {
+    gap: 20px;
+  }
+}
+
 @media screen and (max-width: 530px) {
+  /* About */
+
+  .about-me-container {
+    width: 100% !important;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-me-picture {
+    width: 100%;
+    height: 620px;
+  }
+
   /* Projects */
 
   .projects-card-container {
